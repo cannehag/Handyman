@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <Authors>Jonas Samuelsson</Authors>
+    <Description />
+    <Company>Jonas Samuelsson</Company>
+    <Product>Handyman</Product>
+    <PackageLicenseUrl>https://github.com/JonasSamuelsson/Handyman/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/JonasSamuelsson/Handyman</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JonasSamuelsson/Handyman</RepositoryUrl>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\handyman.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\handyman.snk" Link="handyman.snk" />
+  </ItemGroup>
+
+</Project>
