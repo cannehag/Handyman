@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Globalization;
 
 namespace Handyman.Extensions
 {
-    public static class Configuration
+    internal static class Configuration
     {
         public static Func<DateTimeOffset> Now;
-        public static Func<IFormatProvider> FormatProvider;
-        public static Func<StringComparison> StringComparison;
 
         static Configuration()
         {
@@ -17,8 +14,6 @@ namespace Handyman.Extensions
         public static void Reset()
         {
             Now = () => DateTimeOffset.Now;
-            FormatProvider = () => CultureInfo.CurrentCulture;
-            StringComparison = () => System.StringComparison.CurrentCulture;
         }
     }
 }

@@ -12,7 +12,7 @@ namespace Handyman.Tests.Extensions
         {
             var now = DateTimeOffset.Now;
             Configuration.Now = () => now;
-            10.Minutes().Ago().ShouldBe(Configuration.Now().Subtract(10.Minutes()));
+            10.Minutes().Ago().ShouldBe(now.Subtract(10.Minutes()));
         }
 
         [Fact]
@@ -20,7 +20,7 @@ namespace Handyman.Tests.Extensions
         {
             var now = DateTimeOffset.Now;
             Configuration.Now = () => now;
-            10.Minutes().FromNow().ShouldBe(Configuration.Now().Add(10.Minutes()));
+            10.Minutes().FromNow().ShouldBe(now.Add(10.Minutes()));
         }
     }
 }

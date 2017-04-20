@@ -72,8 +72,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CultureAttribute.cs" />
-    <Compile Include="CustomCultureBehavior.cs" />
     <Compile Include="Mediator\SendRequestTests.cs" />
     <Compile Include="Mediator\PublishMessageTests.cs" />
     <Compile Include="Dynamics\BasicsTests.cs" />
@@ -84,7 +82,6 @@
     <Compile Include="Extensions\BoolExtensionsTests.cs" />
     <Compile Include="Extensions\ObjectExtensionsTests.cs" />
     <Compile Include="Extensions\ComparableExtensionsTests.cs" />
-    <Compile Include="Extensions\ConfigurationTests.cs" />
     <Compile Include="Mediator\ServiceProvider.cs" />
     <Compile Include="UriBuilder\UriBuilder_base_address_tests.cs" />
     <Compile Include="UriBuilder\UriBuilder_query_tests.cs" />
