@@ -18,14 +18,14 @@ namespace Handyman.Mediator
             _getServices = getServices;
         }
 
-        public void Publish(IEvent @event)
+        public virtual void Publish(IEvent @event)
         {
             var eventType = @event.GetType();
             foreach (var handler in GetEventHandlers(eventType))
                 handler.Handle(@event);
         }
 
-        public IEnumerable<Task> Publish(IAsyncEvent @event)
+        public virtual IEnumerable<Task> Publish(IAsyncEvent @event)
         {
             var eventType = @event.GetType();
             return GetAsyncEventHandlers(eventType)
@@ -33,14 +33,14 @@ namespace Handyman.Mediator
                 .ToList();
         }
 
-        public void Send(IRequest request)
+        public virtual void Send(IRequest request)
         {
             var requestType = request.GetType();
             var handler = GetRequestHandler(requestType);
             handler.Handle(request);
         }
 
-        public TResponse Send<TResponse>(IRequest<TResponse> request)
+        public virtual TResponse Send<TResponse>(IRequest<TResponse> request)
         {
             var requestType = request.GetType();
             var handler = GetRequestHandler<TResponse>(requestType);

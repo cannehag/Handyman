@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="CultureAttribute.cs" />
     <Compile Include="CustomCultureBehavior.cs" />
+    <Compile Include="Mediator.TestRunner\TestClass.cs" />
     <Compile Include="Mediator\SendRequestTests.cs" />
     <Compile Include="Mediator\PublishEventTests.cs" />
     <Compile Include="Dynamics\BasicsTests.cs" />
@@ -121,6 +122,10 @@
     <ProjectReference Include="..\Handyman.Extensions\Handyman.Extensions.csproj">
       <Project>{d84f2948-95e8-4832-b022-24b73acba33c}</Project>
       <Name>Handyman.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Handyman.Mediator.TestRunner\Handyman.Mediator.TestRunner.csproj">
+      <Project>{acc9df3d-0253-4f1c-9104-3628cb85eb00}</Project>
+      <Name>Handyman.Mediator.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="..\Handyman.Mediator\Handyman.Mediator.csproj">
       <Project>{cf961e0b-8f2e-46b0-b275-43783c3f1fc1}</Project>
